@@ -1,0 +1,324 @@
+/* Start Global Rules */
+:root{
+/* ### Primary */
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+/* ### Neutral */
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+.main-header .container{
+    max-width: 360px;
+    text-align: center;
+}
+.main-header h2{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 18px;
+}
+.main-header p {
+    color: var(--Grayish-Blue);
+    font-size: 9px;
+    line-height: 15px;
+    padding-top: 10px;
+}
+ul{
+    list-style: none;
+}
+@media (max-width: 991px){
+    .main-header .container{
+        padding: 60px;
+    }
+    .main-header p {
+        font-size: 10px;
+    }
+}
+/* End Global Rules */
+/* Start Header Section */
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    text-align: center;  
+}
+header img{
+    width: 70px;
+    margin-bottom: 30px;
+}
+header h1{
+    font-size: 21px;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 20px;
+}
+header p{
+    max-width: 347px;
+    font-size: 10px;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    line-height: 15px;
+}
+.buttons{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    padding: 8px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+    color: white;
+    margin: 5px;
+    font-size: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.buttons .left{
+    background-color: var(--Strong-Cyan);
+}
+.buttons .right{
+    background-color: var(--Light-Blue);
+}
+.buttons button:hover{
+    opacity: 50%;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+@media (max-width: 991px){
+    header p{
+        font-size: 11.2px;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    .buttons button{
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+}
+/* End Header Section */
+/* Start Track Section */
+.track{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.track .image-side img{
+    max-width: 100%;
+    display: block;
+    left: -30px;
+    position: relative;
+    padding-top: 30px;
+}
+.track .text-side{
+    padding: 50px 40px;
+    margin-right: 100px;
+}
+.track .text-side h3{
+    font-size: 12px;
+    color: var(--Dark-Grayish-Blue);
+    padding-bottom: 5px;
+}
+.track .text-side p{
+    font-size: 8px;
+    color: var(--Grayish-Blue);
+    line-height: 16px;
+    margin-bottom: 30px;
+}
+@media (max-width: 991px){
+    .track{
+        grid-template-columns: 1fr;
+    }
+    .track .image-side img{
+        left: 0; 
+        padding-inline: 80px; 
+    }
+    .track .text-side{
+        text-align: center;
+        margin: 10px;
+        padding-inline: 85px;
+    }
+    .track .text-side h3{
+        font-size: 14px;
+    }
+    .track .text-side p{
+        font-size: 10px;
+    }
+}
+/* End Track Section */
+/* Start Access Section */
+.access{
+    margin: 50px 150px;
+}
+.access img{
+    max-width: 100%;
+}
+@media (max-width: 991px){
+    .access{
+        margin: 80px;
+    }
+}
+/* End Access Section */
+/* Strart Workflow Section */
+.workflow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 40px 80px;
+    text-align: center;
+}
+.workflow .creat img{
+    width: 20px;
+}
+.workflow .creat h4{
+    font-size: 12px;
+    padding-top: 15px;
+    color: var(--Dark-Grayish-Blue);
+}
+.workflow .creat p{
+    font-size: 8px;
+    color: var(--Grayish-Blue);
+    padding-top: 10px;
+    line-height: 16px;
+}
+@media (max-width: 991px){
+    .workflow{
+        grid-template-columns: 1fr;
+    }
+    .workflow .creat img{
+        width: 30px;
+    }
+    .workflow .creat h4{
+        font-size: 16px;
+    }
+    .workflow .creat p{
+        font-size: 10px;
+        padding-inline: 10px;
+    }
+}
+/* End Workflow Section */
+/* Strat Alianse Companies */
+.companies{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 50px;
+}
+.companies img{
+    max-width: 100%;
+    padding: 25px;
+}
+@media (max-width: 991px){
+    .companies{
+        grid-template-columns:  1fr;
+        
+    }
+    .companies img{
+        justify-self: center;
+        width: 150px;
+    }
+}
+/* End Alianse Companies */
+/* Start Device Clipboard Section */
+.buttons button{
+    padding: 10px 40px;
+    font-size: 12.5px;
+}
+/* End Device Clipboard Section */
+/* Start Main Footer Section */
+.main-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px 50px;
+    text-align: center;
+    background-color: rgb(249, 249, 249);
+    
+}
+.main-footer img{
+    width: 40px;
+}
+.main-footer .links ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+}
+.main-footer .links ul li{
+    font-size: 8px;
+    padding: 5px;
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 400;
+}
+.main-footer .links ul li:hover{
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+.main-footer .social ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-footer .social ul li{
+    padding: 5px;
+}
+.main-footer .social ul li img{
+    width: 10px;
+}
+.main-footer .social ul li img:hover{
+    fill: var(--Strong-Cyan); 
+    cursor: pointer;
+}
+@media (max-width:991px){
+    .main-footer{
+        grid-template-columns: 1fr;
+    }
+    .main-footer .links ul{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .main-footer .links ul li{
+        font-size: 12px;
+        padding: 10px;
+    }
+    .main-footer .social ul li img{
+        width: 15px;
+        margin: 10px;
+        padding-bottom: 40px;
+    }
+}
+/* End Main Footer Section */
+    .attribution { 
+        font-size: 8px; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
