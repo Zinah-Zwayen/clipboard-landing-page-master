@@ -198,7 +198,7 @@ header p{
 .workflow .creat img{
     width: 20px;
 }
-.workflow .creat h4{
+.workflow .creat h3{
     font-size: 12px;
     padding-top: 15px;
     color: var(--Dark-Grayish-Blue);
@@ -216,7 +216,7 @@ header p{
     .workflow .creat img{
         width: 30px;
     }
-    .workflow .creat h4{
+    .workflow .creat h3{
         font-size: 16px;
     }
     .workflow .creat p{
